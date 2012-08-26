@@ -30,7 +30,7 @@ public class Preview extends SurfaceView implements SurfaceHolder.Callback {
     }
 
     public void surfaceCreated(SurfaceHolder holder) {
-        mCamera = Camera.open();
+        mCamera = Camera.open(0);
         try {
            mCamera.setPreviewDisplay(holder);
            
